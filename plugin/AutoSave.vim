@@ -36,7 +36,7 @@ endif
 augroup auto_save
   autocmd!
   if g:auto_save_in_insert_mode == 1
-    au CursorHoldI,CompleteDone * nested call AutoSave()
+    au CursorHoldI * nested call AutoSave()
   endif
   au CursorHold,InsertLeave * nested call AutoSave()
 augroup END
